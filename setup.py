@@ -49,6 +49,9 @@ splitsecond is a smart static assets pre-processor.
     install_requires=[
         # add your dependencies here
         # remember to use 'package-name>=x.y.z,<x.y+1.0' notation (this way you get bugfixes)
+        'tornado',
+        'derpconf',
+        'futures',
     ],
     extras_require={
         'tests': tests_require,
@@ -56,7 +59,7 @@ splitsecond is a smart static assets pre-processor.
     entry_points={
         'console_scripts': [
             # add cli scripts here in this form:
-            # 'splitsecond=splitsecond.cli:main',
+            'splitsecond=splitsecond.server:main',
         ],
     },
 )
