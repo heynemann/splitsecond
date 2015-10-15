@@ -30,5 +30,16 @@ coverage-html: unit
 tox:
 	@tox
 
-#docs:
-	#@cd splitsecond/docs && make html && open _build/html/index.html
+run:
+	@splitsecond -c ./splitsecond/splitsecond.conf -ldebug
+
+
+rebuild: build build-js
+
+build:
+	@cd splitsecond/runtime && ./autogen.sh && emconfigure ./configure
+
+build-js:
+	@cd splitsecond/runtime && emmake make && emcc -O2 ./src/splitsecond-splitsecond.o  -o splitsecond.min.js
+	@echo
+	@echo 'splitsecond.min.js updated at ./splitsecond/runtime/splitsecond.min.js'

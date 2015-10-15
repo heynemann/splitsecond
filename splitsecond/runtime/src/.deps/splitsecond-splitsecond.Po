@@ -1,0 +1,26 @@
+splitsecond-splitsecond.o: splitsecond.c splitsecond.h ../config.h \
+  /usr/local/Cellar/emscripten/1.34.11/libexec/system/include/compat/stdlib.h \
+  /usr/local/Cellar/emscripten/1.34.11/libexec/system/include/libc/stdlib.h \
+  /usr/local/Cellar/emscripten/1.34.11/libexec/system/include/libc/features.h \
+  /usr/local/Cellar/emscripten/1.34.11/libexec/system/lib/libc/musl/arch/emscripten/bits/alltypes.h \
+  /usr/local/Cellar/emscripten/1.34.11/libexec/system/include/libc/alloca.h \
+  /usr/local/Cellar/emscripten/1.34.11/libexec/system/include/emscripten/emscripten.h \
+  /usr/local/Cellar/emscripten/1.34.11/libexec/system/include/libc/stdio.h
+
+splitsecond.h:
+
+../config.h:
+
+/usr/local/Cellar/emscripten/1.34.11/libexec/system/include/compat/stdlib.h:
+
+/usr/local/Cellar/emscripten/1.34.11/libexec/system/include/libc/stdlib.h:
+
+/usr/local/Cellar/emscripten/1.34.11/libexec/system/include/libc/features.h:
+
+/usr/local/Cellar/emscripten/1.34.11/libexec/system/lib/libc/musl/arch/emscripten/bits/alltypes.h:
+
+/usr/local/Cellar/emscripten/1.34.11/libexec/system/include/libc/alloca.h:
+
+/usr/local/Cellar/emscripten/1.34.11/libexec/system/include/emscripten/emscripten.h:
+
+/usr/local/Cellar/emscripten/1.34.11/libexec/system/include/libc/stdio.h:

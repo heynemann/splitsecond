@@ -12,6 +12,7 @@ import tornado.web
 import tornado.ioloop
 
 from splitsecond.handlers.healthcheck import HealthcheckHandler
+from splitsecond.handlers.runtime import RuntimeHandler
 
 
 class SplitSecondServiceApp(tornado.web.Application):
@@ -23,6 +24,7 @@ class SplitSecondServiceApp(tornado.web.Application):
     def get_handlers(self):
         handlers = [
             (r'/healthcheck', HealthcheckHandler),
+            (r'/runtime', RuntimeHandler),
         ]
 
         return handlers
