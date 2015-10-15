@@ -27,7 +27,7 @@
 #include <stdio.h>
 
 void one_iter() {
-    /*printf("hello, world!\n");*/
+    printf("hello, world!\n");
 }
 
 int main(int argc, char *argv[])

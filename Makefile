@@ -43,3 +43,9 @@ build-js:
 	@cd splitsecond/runtime && emmake make && emcc -O2 ./src/splitsecond-splitsecond.o  -o splitsecond.min.js
 	@echo
 	@echo 'splitsecond.min.js updated at ./splitsecond/runtime/splitsecond.min.js'
+
+build-html:
+	@cd splitsecond/runtime && emmake make && emcc -O2 ./src/splitsecond-splitsecond.o -o splitsecond.html
+
+serve-html:
+	@cd splitsecond/runtime && python -mSimpleHTTPServer
