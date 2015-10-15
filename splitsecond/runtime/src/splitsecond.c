@@ -25,16 +25,29 @@
 #endif
 
 #include <stdio.h>
+#include <string.h>
 
-void one_iter() {
-    printf("hello, world!\n");
+void splitsecond_main_loop() {
+    /*printf("hello, world!\n");*/
+}
+
+void on_result_callback(void *arg, void *buf, int size) {
+	char data[size];
+	strncat(data, buf, size);
+	printf("%s", data);
+}
+
+void on_error_callback(void *arg) {
+	printf("error in %s\n", arg);
 }
 
 int main(int argc, char *argv[])
 {
+	emscripten_async_wget_data("http://local.globo.com:8000/", "globocom", on_result_callback, on_error_callback);
+
 #ifdef __EMSCRIPTEN__
 	// void emscripten_set_main_loop(em_callback_func func, int fps, int simulate_infinite_loop);
-	emscripten_set_main_loop(one_iter, 60, 1);
+	emscripten_set_main_loop(splitsecond_main_loop, 60, 1);
 #endif
 
 	return EXIT_SUCCESS;

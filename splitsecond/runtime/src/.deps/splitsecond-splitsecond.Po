@@ -5,7 +5,10 @@ splitsecond-splitsecond.o: splitsecond.c splitsecond.h ../config.h \
   /usr/local/Cellar/emscripten/1.34.11/libexec/system/lib/libc/musl/arch/emscripten/bits/alltypes.h \
   /usr/local/Cellar/emscripten/1.34.11/libexec/system/include/libc/alloca.h \
   /usr/local/Cellar/emscripten/1.34.11/libexec/system/include/emscripten/emscripten.h \
-  /usr/local/Cellar/emscripten/1.34.11/libexec/system/include/libc/stdio.h
+  /usr/local/Cellar/emscripten/1.34.11/libexec/system/include/libc/stdio.h \
+  /usr/local/Cellar/emscripten/1.34.11/libexec/system/include/compat/string.h \
+  /usr/local/Cellar/emscripten/1.34.11/libexec/system/include/libc/string.h \
+  /usr/local/Cellar/emscripten/1.34.11/libexec/system/include/libc/strings.h
 
 splitsecond.h:
 
@@ -24,3 +27,9 @@ splitsecond.h:
 /usr/local/Cellar/emscripten/1.34.11/libexec/system/include/emscripten/emscripten.h:
 
 /usr/local/Cellar/emscripten/1.34.11/libexec/system/include/libc/stdio.h:
+
+/usr/local/Cellar/emscripten/1.34.11/libexec/system/include/compat/string.h:
+
+/usr/local/Cellar/emscripten/1.34.11/libexec/system/include/libc/string.h:
+
+/usr/local/Cellar/emscripten/1.34.11/libexec/system/include/libc/strings.h:

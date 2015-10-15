@@ -40,12 +40,18 @@ build:
 	@cd splitsecond/runtime && ./autogen.sh && emconfigure ./configure
 
 build-js:
-	@cd splitsecond/runtime && emmake make && emcc -O2 ./src/splitsecond-splitsecond.o  -o splitsecond.min.js
+	@cd splitsecond/runtime && emmake make && emcc -O2 --pre-js prefix.js --post-js postfix.js ./src/splitsecond-splitsecond.o  -o splitsecond.min.js
 	@echo
 	@echo 'splitsecond.min.js updated at ./splitsecond/runtime/splitsecond.min.js'
 
 build-html:
-	@cd splitsecond/runtime && emmake make && emcc -O2 ./src/splitsecond-splitsecond.o -o splitsecond.html
+	@cd splitsecond/runtime && emmake make && emcc -O2 --pre-js prefix.js --post-js postfix.js ./src/splitsecond-splitsecond.o -o splitsecond.html
 
 serve-html:
 	@cd splitsecond/runtime && python -mSimpleHTTPServer
+
+kill-explore:
+	@-ps aux | egrep -i 'python.+-mSimpleHTTPServer' | egrep -v egrep | awk '{ print $$2 }' | xargs kill -9
+
+explore: kill-explore
+	@cd tests/exploratory/ && python -mSimpleHTTPServer &

@@ -1,0 +1,35 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+    <div id="test"></div>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.20/require.min.js"></script>-->
+    <!--<script>-->
+      <!--requirejs.config({-->
+          <!--paths: {-->
+              <!--"splitsecond": "splitsecond.min"-->
+          <!--}-->
+      <!--});-->
+      <!--require(['domReady', 'splitsecond'], function(domReady, splitsecond) {-->
+        <!--domReady(function() {-->
+          <!--console.log(splitsecond.Module);-->
+          <!--splitsecond({-->
+              <!--testDiv: document.getElementById('test')-->
+          <!--});-->
+        <!--});-->
+      <!--});-->
+    <!--</script>-->
+    <script>
+      var Module = {
+        'print': function(msg) {
+          console.log(msg);
+        },
+        'printErr': function(msg) {
+          console.log('ERROR: ' + msg);
+        }
+      };
+    </script>
+    <script src="splitsecond.min.js"></script>
+  </body>
+</html>
