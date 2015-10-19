@@ -28,7 +28,7 @@
 #include <string.h>
 
 void splitsecond_main_loop() {
-    /*printf("hello, world!\n");*/
+	printf("hello, world!\n");
 }
 
 void on_result_callback(void *arg, void *buf, int size) {

@@ -44,7 +44,7 @@
 #define PACKAGE_NAME "splitsecond"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "splitsecond 2015-10-15"
+#define PACKAGE_STRING "splitsecond 2015-10-16"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "splitsecond"
@@ -53,10 +53,10 @@
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "2015-10-15"
+#define PACKAGE_VERSION "2015-10-16"
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
 
 /* Version number of package */
-#define VERSION "2015-10-15"
+#define VERSION "2015-10-16"
